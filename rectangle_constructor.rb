@@ -1,13 +1,12 @@
 require 'pry'
 
-class Rectangle(width, height)
-  attr_accessor :width, :height
+class Rectangle
+  attr_reader :width, :height
 
-  def initialize
+  def initialize(width, height)
     @width = width
     @height = height
   end
-
 end
 
-puts Rectangle.new(5, 6)
+binding.pry
